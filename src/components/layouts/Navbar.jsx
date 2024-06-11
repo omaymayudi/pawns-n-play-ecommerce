@@ -8,10 +8,10 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="">
-      <div className="lg:max-w-7xl md:max-w-3xl  mx-auto ">
-        <div className="fixed w-full mx-auto py-4">
-          <div className="flex justify-between items-center px-4">
+    <nav className="container mx-auto">
+      <div className="">
+        <div className="fixed w-full py-4 px-4">
+          <div className="flex justify-between items-center lg:px-20 md:px-10">
             <div className="flex items-center">
               <img className="w-8 h-8" src="src/assets/logo.png" alt="" />
               <div className="text-white text-xl font-bold pl-3">
@@ -37,28 +37,38 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-[30px] h-[30px]">
-              <button onClick={() => setOpen(!open)} className="md:hidden">
-                <HiOutlineMenuAlt3 className="text-3xl text-white" />
-              </button>
+            <div className="flex">
+              <div className="w-[30px] h-[30px]">
+                <button onClick={() => setOpen(!open)} className="md:hidden">
+                  <HiOutlineMenuAlt3 className="text-3xl text-white" />
+                </button>
+              </div>
+              <div className="hidden md:flex">
+                <button
+                  type="button"
+                  className="py-2 px-3 lg:py-3 lg:px-[18px] text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-3xl border border-gray-200 hover:bg-salte-500  focus:z-10 focus:ring-4 focus:ring-gray-100  "
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
           </div>
 
           {/* Mobile Menu */}
           <div
-            className={`fixed top-0 right-0 h-screen w-screen bg-[url('/src/assets/Hero-Section-mobile.png')] bg-cover  -left-full transition-all  ${
-              open ? "left-0" : ""
+            className={`fixed w-full top-0 h-full  bg-[url('/src/assets/Hero-Section-mobile.png')] bg-cover transition-all  ${
+              open ? "left-0" : "-left-full"
             }`}
           >
-            <div className="w-full mx-auto py-2">
+            <div className="py-2">
               <div className="relative">
                 <button onClick={() => setOpen(!open)}>
-                  <div className="font-extrabold text-3xl text-white/60 right-0 top-0 absolute pr-2">
+                  <div className="font-extrabold text-3xl text-white/60 right-0 top-0 absolute pt-2 pr-2">
                     <IoMdClose />
                   </div>
                 </button>
 
-                <div className="flex flex-wrap justify-center items-center text-white/60 text-xl font-bold space-x-2">
+                <div className="flex flex-wrap justify-center items-center text-white/60 text-xl font-bold">
                   <img
                     className="w-8 h-8 opacity-60"
                     src="src/assets/logo.png"

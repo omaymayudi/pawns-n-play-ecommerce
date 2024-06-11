@@ -1,8 +1,9 @@
 import RootLayout from "@/components/layouts/RootLayout";
 import AboutPage from "@/pages/AboutPage";
 
-import Homepage from "@/pages/Homepage";
+import { IndexPage } from "@/pages/IndexPage";
 import NoteFound from "@/pages/NotFound";
+import { ShopPage } from "@/pages/ShopPage";
 import {
   createBrowserRouter,
   Route,
@@ -13,8 +14,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<Homepage />} />
-        <Route path="about" element={<AboutPage />} />
+        <Route index element={<IndexPage />} />
+        <Route path="about" element={<ShopPage />} />
 
         <Route path="*" element={<NoteFound />} />
       </Route>
