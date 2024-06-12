@@ -8,7 +8,7 @@ const CradServices = ({ img, text }) => {
         </div>
         <div className="w-full overflow-hidden h-[168px]">
           <img
-            src={`src/assets/services/${img}`}
+            src={`/services/${img}`}
             alt=""
             className="w-full rounded-md h-full object-cover"
           />

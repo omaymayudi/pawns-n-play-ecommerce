@@ -2,7 +2,7 @@ const Homepage = () => {
   return (
     <>
       <div className="">
-        <div className="bg-[url('/src/assets/Hero-Section-mobile.png')] md:bg-[url('/src/assets/Hero-bg-home.png')] bg-cover  h-screen w-full flex flex-wrap">
+        <div className="bg-[url('/Hero-Section-mobile.png')] md:bg-[url('/Hero-bg-home.png')] bg-cover  h-screen w-full flex flex-wrap">
           <div className="pt-[172px] px-7 md:px-16 lg:px-20 xl:pt-60">
             <div className="justify-start text-white">
               <div className="xl:pr-[530px] lg:pr-[400px] md:pr-[250px]">
@@ -23,7 +23,7 @@ const Homepage = () => {
               >
                 Shop Now{" "}
                 <span className="inline-block pl-3">
-                  <img className="h-4 w-5" src="src/assets/logo.png" alt="" />
+                  <img className="h-4 w-5" src="logo.png" alt="" />
                 </span>
               </button>
             </div>
