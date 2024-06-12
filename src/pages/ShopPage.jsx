@@ -1,4 +1,6 @@
+import LinePage from "@/components/elements/LinePage";
 import TittlePage from "@/components/elements/TittlePage";
+import CradProduct from "@/components/fragments/CradProduct";
 import { FaSearch } from "react-icons/fa";
 
 export const ShopPage = () => {
@@ -23,8 +25,27 @@ export const ShopPage = () => {
           </form>
         </div>
       </div>
-      <hr className="w-full h-1 my-8 bg-gray-200 border-0 rounded " />
-      <h2></h2>
+      <LinePage />
+      <h2 className="text-base font-medium mb-5 text-black">
+        Featured Products
+      </h2>
+      <div>
+        <ul className="grid grid-cols-5 text-xs text-center font-semibold items-center">
+          <li className="bg-gradient-to-l from-slate-700 to-slate-900 rounded-lg py-[10px] text-white border-spacing-1">
+            Random
+          </li>
+          <li className="text-black/80">Cat</li>
+          <li className="text-black/80">Dogs</li>
+          <li className="text-black/80">Fish</li>
+          <li className="text-black/80">Birds</li>
+        </ul>
+      </div>
+
+      <div className="grid grid-cols-1 mt-5 md:grid-cols-3 lg:grid-cols-3 gap-[15px]">
+        <CradProduct img="product-1.png" />
+        <CradProduct img="product-2.png" />
+        <CradProduct img="product-2.png" />
+      </div>
     </div>
   );
 };

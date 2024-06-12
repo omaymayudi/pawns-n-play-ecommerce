@@ -1,4 +1,5 @@
 import Homepage from "./Homepage";
+import ServicesPage from "./ServicesPage";
 import { ShopPage } from "./ShopPage";
 
 export const IndexPage = () => {
@@ -11,6 +12,11 @@ export const IndexPage = () => {
         <div className="container">
           <section>
             <ShopPage />
+          </section>
+        </div>
+        <div className="container">
+          <section>
+            <ServicesPage />
           </section>
         </div>
       </div>
