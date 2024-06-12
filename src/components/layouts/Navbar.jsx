@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="fixed w-full py-4 px-4">
           <div className="flex justify-between items-center lg:px-20 md:px-10">
             <div className="flex items-center">
-              <img className="w-8 h-8" src="src/assets/logo.png" alt="" />
+              <img className="w-8 h-8" src="src/assets/logo-2.svg" alt="logo" />
               <div className="text-white text-xl font-bold pl-3">
                 <h2>Paws n’ Play</h2>
               </div>
