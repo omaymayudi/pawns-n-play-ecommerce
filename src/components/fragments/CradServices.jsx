@@ -6,7 +6,7 @@ const CradServices = ({ img, text }) => {
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-xl font-medium absolute text-white">{text}</h1>
         </div>
-        <div className="w-full overflow-hidden h-[168px]">
+        <div className="w-full overflow-hidden h-[168px] md:h-[190px] lg:h-[350px]">
           <img
             src={`/services/${img}`}
             alt=""

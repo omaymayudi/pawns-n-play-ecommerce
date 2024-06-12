@@ -14,7 +14,7 @@ const ServicesPage = () => {
 
       <BoxContect>
         <div className="">
-          <div className="grid grid-cols-2 mt-5 gap-[7px] md:gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-3 mt-5 gap-[7px] md:gap-4">
             <div className="w-full">
               <CradServices img="services-1.png" text="Grooming" />
             </div>
@@ -27,7 +27,7 @@ const ServicesPage = () => {
             <div className="w-full ">
               <CradServices img="services-4.png" text="Training" />
             </div>
-            <div className="w-full col-span-2 ">
+            <div className="w-full col-span-2 lg:row-span-3">
               <CradServices img="services-5.png" text="Adoption" />
             </div>
           </div>
