@@ -56,7 +56,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <div
-            className={`fixed w-full top-0 h-full  bg-[url('/src/assets/Hero-Section-mobile.png')] bg-cover transition-all  ${
+            className={`fixed w-full top-0 h-full  bg-slate-500 transition-all  ${
               open ? "left-0" : "-left-full"
             }`}
           >

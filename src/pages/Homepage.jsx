@@ -3,9 +3,9 @@ const Homepage = () => {
     <>
       <div className="">
         <div className="bg-[url('/Hero-Section-mobile.png')] md:bg-[url('/Hero-bg-home.png')] bg-cover  h-screen w-full flex flex-wrap">
-          <div className="pt-[172px] px-7 md:px-16 lg:px-20 xl:pt-60">
+          <div className="pt-[112px] px-7 md:px-16 lg:px-20 xl:pt-60">
             <div className="justify-start text-white">
-              <div className="xl:pr-[530px] lg:pr-[400px] md:pr-[250px]">
+              <div className="xl:pr-[530px] lg:pr-[400px] md:pr-[250px] mb-7">
                 <h1 className="font-semibold leading-[130%] text-3xl xl:text-6xl">
                   {`Pawsitively Perfect: Where Every Pet's Dream Comes True!`}
                 </h1>
@@ -19,12 +19,14 @@ const Homepage = () => {
               </div>
               <button
                 type="button"
-                className="py-4 px-7 lg:py-[10px] lg:px-[18px] text-sm font-medium text-white focus:outline-none bg-transparent rounded-3xl border border-gray-200 hover:bg-slate-300  focus:z-10 focus:ring-4 focus:ring-gray-100  "
+                className="py-3 text-center px-7 lg:py-[10px] lg:px-[18px] text-sm font-medium text-white focus:outline-none bg-transparent rounded-3xl border border-gray-200 hover:bg-slate-300  focus:z-10 focus:ring-4 focus:ring-gray-100  "
               >
-                Shop Now{" "}
-                <span className="inline-block pl-3">
-                  <img className="h-4 w-5" src="logo.png" alt="" />
-                </span>
+                <div className="items-center flex justify-center">
+                  <span className="">Shop Now</span>
+                  <span className="inline-block pl-3">
+                    <img className="h-6 w-6" src="logo.png" alt="" />
+                  </span>
+                </div>
               </button>
             </div>
           </div>
