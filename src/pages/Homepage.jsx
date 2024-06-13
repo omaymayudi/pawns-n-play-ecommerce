@@ -3,9 +3,9 @@ const Homepage = () => {
     <>
       <div className="">
         <div className="bg-[url('/Hero-Section-mobile.png')] md:bg-[url('/Hero-bg-home.png')] bg-cover  h-screen w-full flex flex-wrap">
-          <div className="pt-[112px] px-7 md:px-16 lg:px-20 xl:pt-60">
+          <div className="pt-[112px] px-7 md:px-16 lg:px-20 xl:pt-28">
             <div className="justify-start text-white">
-              <div className="xl:pr-[530px] lg:pr-[400px] md:pr-[250px] mb-7">
+              <div className="xl:pr-[530px] lg:pr-[400px] md:pr-[250px] mb-7 lg:pt-32 md:pt-12">
                 <h1 className="font-semibold leading-[130%] text-3xl xl:text-6xl">
                   {`Pawsitively Perfect: Where Every Pet's Dream Comes True!`}
                 </h1>
