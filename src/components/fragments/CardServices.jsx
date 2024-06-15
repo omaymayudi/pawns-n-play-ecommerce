@@ -1,7 +1,7 @@
 const CradServices = ({ img, text }) => {
   return (
     <>
-      <div className="relative ">
+      <div className="relative hover:cursor-pointer">
         <div className="absolute inset-0 bg-gray-700 opacity-30 rounded-md"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-5xl font-medium absolute text-white">

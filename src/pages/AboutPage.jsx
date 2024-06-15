@@ -9,9 +9,13 @@ const AboutPage = () => {
     <>
       <BoxPage>
         <div>
-          <TittlePage tittleText={"About Us"} />
+          <TittlePage
+            tittleText={"About Us"}
+            color={"black"}
+            logo={"logo-2.svg"}
+          />
         </div>
-        <LinePage />
+        <LinePage color={"bg-gray-200"} />
         <BoxContect>
           <div className="flex">
             <div className="w-full lg:w-1/2">
@@ -21,7 +25,7 @@ const AboutPage = () => {
               <Paragraf text="At Paws n’ Play, customer satisfaction isn't just a goal – it's our guiding principle. We go above and beyond to ensure every interaction leaves tails wagging and hearts smiling. From personalized recommendations to attentive service, we're here to make your journey with your pet as joyful and fulfilling as possible. " />
               <Paragraf text="Join us in our mission to create a world where every pet is cherished, every need is met, and every tail wags with happiness. Welcome to Paws n’ Play, where pets are family, and love knows no bounds." />
             </div>
-            <div className="hidden lg:flex w-1/2 h-[500px]">
+            <div className="hidden lg:flex w-1/2 ">
               <div className="py-6">
                 <div className="ml-24 border border-spacing-2 shadow-lg p-2 rounded-lg">
                   <img className="rounded-lg " src="about-1.png" alt="" />

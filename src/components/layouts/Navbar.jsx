@@ -8,32 +8,32 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="container mx-auto">
+    <nav className="container mx-auto bg-slate-600/70">
       <div className="">
-        <div className="fixed w-full py-4 px-4">
+        <div className="fixed z-50 w-full justify-center py-4 px-4 ">
           <div className="flex justify-between items-center lg:px-20 md:px-10">
-            <div className="flex items-center">
+            <div className="flex items-center hover:cursor-pointer">
               <img className="w-8 h-8" src="logo.png" alt="logo" />
               <div className="text-white text-xl font-bold pl-3">
                 <h2>Paws n’ Play</h2>
               </div>
               <div className="items-center">
                 <ul className="hidden md:flex justify-center text-center items-center text-xs  text-white/60 flex-wrap lg:pl-8 pl-6 lg:space-x-8 space-x-3">
-                  <li className="flex items-center">
+                  <li className="flex items-center hover:cursor-pointer">
                     <span className="pr-[2px]">Shop</span>
                     <span className="">
                       <IoIosArrowDown className="" />
                     </span>
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center  hover:cursor-pointer">
                     <span className="pr-[2px]">Services</span>
                     <span className="">
                       <IoIosArrowDown className="" />
                     </span>
                   </li>
-                  <li>About Us</li>
-                  <li>Blog</li>
-                  <li>Contact</li>
+                  <li className=" hover:cursor-pointer">About Us</li>
+                  <li className=" hover:cursor-pointer">Blog</li>
+                  <li className=" hover:cursor-pointer">Contact</li>
                 </ul>
               </div>
             </div>
