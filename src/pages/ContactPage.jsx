@@ -21,7 +21,7 @@ const ContactPage = () => {
           />
         </div>
         <LinePage color={"bg-gray-200"} />
-        <div className="md:flex md:p-4 space-x-6 justify-center items-center">
+        <div className="md:flex md:p-4 justify-center items-center">
           <div className="hidden md:flex md:w-1/2">
             <FormContact />
           </div>
